@@ -1,0 +1,28 @@
+.show-claims {
+
+  .claims-item {
+    margin-bottom: 30px;
+  }
+
+  .claim-item-title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .claim-item-row {
+    margin-bottom: 10px;
+    display: flex;
+
+    div {
+
+      &:first-child {
+        width: 120px;
+        color: #32313E;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.ant-calendar-picker-container {
+  z-index: 99999;
+}
+
+body.juvo-body-app a.ant-calendar-ok-btn {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}

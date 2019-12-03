@@ -1,0 +1,39 @@
+.juvo-collapse {
+  font-family: 'Lato', sans-serif;
+
+  .ant-collapse-item {
+    border: none;
+
+    .ant-collapse-content {
+      color: $text-color-primary;
+
+      .ant-collapse-content-box {
+        padding: 13px 0 0 0;
+      }
+    }
+
+    &.ant-collapse-item-active {
+
+      .ant-collapse-header[aria-expanded="true"] .arrow {
+        transform: translateY(-50%) rotate(90deg);
+      }
+    }
+
+    .ant-collapse-header {
+      position: relative;
+      padding: 0 40px 0 0;
+
+      .arrow {
+        color: #616161;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        left: auto;
+      }
+    }
+  }
+}

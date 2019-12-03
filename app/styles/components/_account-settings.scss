@@ -1,0 +1,46 @@
+.account-settings {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .avatar-uploader-container {
+    position: relative;
+    margin-top: 6px;
+    margin-right: 50px;
+    width: 102px;
+    height: 102px;
+
+    .delete-picture {
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      right: -14px;
+      font-size: 15px;
+      color: $text-color-danger;
+      transition: all .1s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 102px;
+    }
+
+    .ant-upload.ant-upload-select-picture-card:hover {
+      border-color: $primary-color;
+    }
+  }
+
+  .ant-form-vertical {
+    max-width: 470px;
+    flex: 1;
+  }
+
+  .account-settings-save button {
+    width: 150px;
+    text-align: center;
+  }
+}

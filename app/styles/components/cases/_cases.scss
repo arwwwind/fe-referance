@@ -1,0 +1,58 @@
+.profile-case {
+
+  .buttons-group-equal {
+    justify-content: flex-end;
+
+    button {
+      min-width: 131px;
+
+      span {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.entity-cases {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .juvo-table-actions {
+    width: 200px;
+    max-width: 50%;
+  }
+
+  .juvo-table-search {
+    width: 200px;
+    max-width: 50%;
+  }
+
+  .juvo-table-content {
+    width: 100%;
+  }
+}
+
+.dashboard-cases {
+  position: relative;
+
+  .juvo-table-search {
+    width: 150px;
+    right: 150px;
+    top: 2px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+
+  .juvo-table-actions {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+
+    .juvo-table-title {
+      font-size: 18px;
+    }
+  }
+}

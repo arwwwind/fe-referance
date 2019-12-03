@@ -1,0 +1,15 @@
+.ant-progress {
+
+  .ant-progress-inner {
+    background-color: #e8e8e8;
+  }
+
+  &.progress-primary {
+
+    .ant-progress-success-bg,
+    .ant-progress-bg {
+      background-color: $primary-color;
+    }
+  }
+}
+

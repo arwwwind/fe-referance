@@ -1,0 +1,22 @@
+.juvo-custom-pagination {
+  display: flex;
+  align-items: center;
+}
+
+.note-details {
+
+  .dynamic-download {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.note-email-iframe {
+  border: none;
+  width: 100%;
+  min-height: 450px;
+}

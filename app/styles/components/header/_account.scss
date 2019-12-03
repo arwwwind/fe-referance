@@ -1,0 +1,114 @@
+.juvo-account-dropdown {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 100%;
+
+  .profile-account {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .profile-icon {
+    display: flex;
+    margin-right: 9px;
+    width: 32px;
+    height: 32px;
+    border-radius: 34px;
+    overflow: hidden;
+
+    .preloader {
+      margin: auto;
+      padding: 0;
+      width: 100%;
+
+      img {
+        width: 15px!important;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .profile-name {
+    margin-right: 8px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .anticon {
+    font-size: 9px;
+  }
+}
+
+.ant-dropdown {
+
+  .juvo-header-dropdown {
+    margin-top: -3px;
+    border-radius: 0;
+  }
+}
+
+.juvo-header-dropdown {
+
+  .ant-dropdown-menu-item:not(.juvo-header-dropdown-profile) {
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .link {
+    padding: 8px $spacing-xxl;
+    color: #494949;
+  }
+
+  .juvo-header-dropdown-profile {
+    padding: 22px $spacing-xxl;
+    cursor: default;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #fff!important;
+    }
+
+    .profile-icon {
+      margin-right: 15px;
+      width: 61px;
+      height: 61px;
+      border-radius: 61px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .profile-information {
+
+      .name {
+        color: $text-color-primary;
+      }
+
+      .email {
+
+        a {
+          color: $text-color-light;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

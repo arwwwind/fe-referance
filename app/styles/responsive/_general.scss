@@ -1,0 +1,42 @@
+body {
+  overflow-y: scroll;
+}
+
+.juvo-main-sidebar {
+  min-width: 300px;
+}
+
+.juvo-main-container {
+  min-width: 1200px;
+
+  &.with-sidebar {
+    min-width: 650px;
+  }
+
+  &.with-one-sidebar {
+    min-width: 900px;
+  }
+
+  &.account-settings-container {
+    min-width: 665px;
+  }
+}
+
+@media (max-width: 1225px) {
+
+  .account-settings {
+
+  }
+}
+
+@media (max-width: 850px) {
+
+  .ant-drawer-content-wrapper {
+    max-width: 100%;
+  }
+
+  .ant-drawer-content {
+    max-width: 100%;
+    overflow: auto;
+  }
+}

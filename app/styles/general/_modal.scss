@@ -1,0 +1,57 @@
+.juvo-modal-confirm {
+
+  .ant-modal {
+    font-family: 'Lato', sans-serif;
+    color: $text-color-primary;
+  }
+
+  .ant-modal-body {
+    padding: 30px;
+  }
+
+  .content {
+    display: flex;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 30px;
+      color: $info-color;
+      margin-right: 15px;
+    }
+
+    .content-text {
+
+      .title {
+        line-height: 24px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .sub-title {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .juvo-errors {
+    padding-left: 45px;
+  }
+
+  .buttons {
+   padding-top: 20px;
+
+    button {
+      width: 150px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.ant-popover {
+  font-family: 'Lato', sans-serif;
+  z-index: 999999;
+}

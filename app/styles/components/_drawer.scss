@@ -1,0 +1,48 @@
+.ant-drawer {
+
+  .drawer-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: $spacing-extra-sm $spacing-xl;
+    left: 0;
+    background: #fff;
+  }
+
+  .ant-drawer-body {
+    padding: 0 $spacing-xl;
+
+    .ant-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .ant-drawer-close {
+    right: 22px;
+    top: 26px;
+
+    .ant-drawer-close-x {
+      color: $btn-color-primary;
+      width: auto;
+      height: auto;
+      line-height: normal;
+      font-size: 24px;
+
+      &:hover {
+        color: lighten($btn-color-primary, 15%);
+      }
+    }
+  }
+
+  .ant-drawer-header {
+    border: none;
+    padding: $spacing-extra-xs $spacing-xl $spacing-extra-xxl $spacing-xl;
+
+    .ant-drawer-title {
+      text-align: center;
+      color: $text-color-primary;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+}

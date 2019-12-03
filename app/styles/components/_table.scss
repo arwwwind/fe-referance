@@ -1,0 +1,281 @@
+.juvo-table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.juvo-table-title {
+  font-size: 22px;
+}
+
+.juvo-table-export {
+  display: flex;
+  align-items: center;
+
+  .preloader {
+    display: none;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .export-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+
+    &.loading {
+
+      .preloader {
+        display: block;
+      }
+
+      a {
+        opacity: 0.2;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all .2s ease-in-out;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.juvo-table-btn {
+  margin-left: 30px;
+}
+
+.juvo-table-search {
+
+  .ant-input-affix-wrapper {
+
+    .ant-input {
+      padding: 6px 10px 6px 39px;
+      border: none;
+    }
+
+    .ant-input-suffix {
+      width: 20px;
+      font-size: 19px;
+      left: 5px;
+      right: auto;
+
+      .ant-input-search-icon {
+        color: $icon-color-primary;
+
+        &:hover {
+          color: lighten($icon-color-primary, 15%);
+        }
+      }
+    }
+  }
+}
+
+.ReactTable .rt-th,
+.ReactTable .rt-td {
+  white-space: normal;
+  word-wrap: break-word;
+
+  &.center {
+    margin: 0 auto;
+  }
+}
+
+.juvo-table-content {
+
+  .ReactTable {
+    border-radius: 4px;
+    border: 1px solid $table-border-color;
+    min-height: 98px;
+
+    .rt-thead {
+      box-shadow: none;
+
+      .rt-td,
+      .rt-th {
+        font-size: 15px;
+        background-color: $table-head-bg;
+        padding: 15px;
+        border: none;
+        text-align: left;
+      }
+    }
+
+    .rt-tbody {
+
+      .rt-th,
+      .rt-td {
+        font-size: 14px;
+        padding: 13.5px 15px;
+        border: none;
+      }
+
+      .rt-tr-group {
+        border-bottom: 1px solid $table-border-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .-pagination {
+      border-top: 1px solid $table-border-color;
+      box-shadow: none;
+    }
+
+    .loading-indicator {
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
+    }
+
+    .rt-noData {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 14px 20px;
+      transform: none;
+      left: auto;
+      top: auto;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
+
+.table-filter-header {
+  position: relative;
+
+  .table-filter-header-name {
+    vertical-align: middle;
+    max-width: calc(100% - 15px);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sort-icon {
+    margin-top: 10px;
+    margin-left: 5px;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .sort-inactive {
+    display: block;
+  }
+
+  .sort-active {
+    display: none;
+  }
+}
+
+.-sort-asc {
+
+  .table-filter-header {
+
+    .sort-inactive {
+      display: none;
+    }
+
+    .sort-active {
+      display: block;
+    }
+  }
+}
+
+.-sort-desc {
+
+  .table-filter-header {
+
+    .sort-inactive {
+      display: none;
+    }
+
+    .sort-active {
+      transform: rotate(180deg);
+      display: block;
+    }
+  }
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc,
+.ReactTable .rt-thead .rt-td.-sort-asc,
+.ReactTable .rt-thead .rt-th.-sort-desc,
+.ReactTable .rt-thead .rt-td.-sort-desc {
+  box-shadow: none;
+}
+
+.two-equal-columns {
+  width: 100%;
+  table-layout: fixed;
+
+  tr {
+
+    td {
+
+      &:first-child {
+        padding-right: 2.5px;
+      }
+
+      &:last-child {
+        padding-left: 2.5px;
+      }
+    }
+  }
+}
+
+.juvo-simple-table {
+  position: relative;
+  .juvo-table-actions {
+    position: absolute;
+    right: 16px;
+    z-index: 1;
+  }
+}
+
+.quick-view {
+
+  .ant-dropdown-trigger {
+    color: $text-color-primary;
+
+    &:hover {
+      color: $text-color-primary;
+    }
+  }
+}

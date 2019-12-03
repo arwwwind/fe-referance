@@ -1,0 +1,47 @@
+body.juvo-body-app {
+
+  .has-error .ant-input,
+  .has-error .ant-input:hover {
+    border-color: $text-color-danger;
+    box-shadow: none;
+  }
+
+  .ant-input-number {
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+
+    &::-webkit-input-placeholder {
+      color: $placeholder-color;
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    &:-moz-placeholder {
+      color: $placeholder-color;
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    &::-moz-placeholder {
+      color: $placeholder-color;
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    &:-ms-input-placeholder {
+      color: $placeholder-color;
+      opacity: 1;
+      font-size: 16px;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

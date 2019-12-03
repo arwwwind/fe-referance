@@ -1,0 +1,45 @@
+body.juvo-body-app {
+
+  a,
+  a:not([href]) {
+    color: $link-color;
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+      color: lighten($link-color, 15%);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none!important;
+    }
+  }
+}
+
+.dynamic-download {
+  position: relative;
+
+  >img, > span {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .preloader {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &.loading {
+
+    > img, > span {
+      opacity: 0.5;
+    }
+  }
+}

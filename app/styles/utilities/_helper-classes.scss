@@ -1,0 +1,212 @@
+.inner-width {
+  width: 100%;
+  max-width: $innerWidth;
+  margin: 0 auto;
+}
+
+.t-upper {
+  text-transform: uppercase;
+}
+
+.text-danger {
+  color: $text-color-danger;
+}
+
+.t-lowercase {
+  text-transform: lowercase;
+}
+
+.t-capitalize {
+  text-transform: capitalize;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.text-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+
+  a {
+    font-size: 14px;
+  }
+}
+
+.t-muted {
+  color: $text-color-muted;
+}
+
+.text-muted {
+  color: $text-color-muted;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-warning {
+  color: $text-color-warning;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.text-info {
+  color: $text-color-info;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-link {
+  color: $link-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+.f-s-13 {
+  font-size: 13px;
+}
+
+.f-s-15 {
+  font-size: 15px;
+}
+
+.f-s-16 {
+  font-size: 16px;
+}
+
+.two-columns-auto-width {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-start;
+
+  .column {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  white-space: initial;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s
+}
+
+@keyframes animateright {
+  from {
+    right: -400px;
+    opacity: 0
+  }
+  to {
+    right: 0;
+    opacity: 1
+  }
+}
+
+.align-items-right {
+  justify-content: flex-end;
+}
+
+.align-items-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nowrap {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.block {
+  display: block;
+}
+
+.links-list {
+
+  a {
+    margin-right: 5px;
+
+    &:last-child {
+      margin: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: ',';
+    }
+  }
+}
+
+.text-overflow {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-items-list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    margin-right: 5px;
+
+    &:last-child {
+      margin: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: ',';
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}

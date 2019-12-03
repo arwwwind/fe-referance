@@ -1,0 +1,17 @@
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+body.juvo-body-app {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: $text-color-primary;
+}
+
+body.fontLoaded {
+  font-family: 'Lato', sans-serif;
+}

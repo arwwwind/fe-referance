@@ -1,0 +1,86 @@
+.juvo-menu-trigger {
+  display: none;
+}
+
+.juvo-menu-group,
+.juvo-secondary-menu,
+.juvo-primary-menu,
+.juvo-menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.juvo-primary-menu {
+  margin-right: 150px;
+}
+
+.juvo-primary-menu,
+.juvo-secondary-menu {
+
+  a {
+    color: $text-color-primary;
+    position: relative;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-right: 25px;
+    padding: 0 5px;
+
+    span {
+      white-space: nowrap;
+      text-align: center;
+      display: block;
+      width: 100%;
+      opacity: 0;
+      font-weight: 700;
+
+      &:first-child {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        font-weight: 400;
+      }
+    }
+
+    &:hover {
+      color: lighten($text-color-primary, 15%);
+    }
+
+    &:after {
+      content: '';
+      background-color: transparent;
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: -1px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: $link-color;
+
+      span {
+        opacity: 1;
+
+        &:first-child {
+          opacity: 0;
+        }
+      }
+
+      &:after {
+        background-color: $primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.juvo-carousel {
+
+  .control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .carousel-pagination {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    a {
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

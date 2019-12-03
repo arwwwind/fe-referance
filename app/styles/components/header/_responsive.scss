@@ -1,0 +1,161 @@
+@keyframes fadeIn {
+  from { opacity: 0; top: 40px; }
+  to { opacity: 1; top: 64px; }
+}
+
+@media (max-width: 1240px) {
+
+  .juvo-logo {
+    margin: 0;
+  }
+
+  .juvo-menu {
+
+    .juvo-primary-menu {
+      margin-right: 25px;
+    }
+  }
+
+  .juvo-account-dropdown {
+    margin: 0;
+  }
+
+  .juvo-header {
+
+    .inner-width {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+
+  .juvo-menu {
+    margin: 0 $spacing-md;
+
+    .juvo-secondary-menu a,
+    .juvo-primary-menu a {
+      margin-right: 10px;
+      padding: 0 3px;
+      font-size: 13px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .juvo-primary-menu {
+      margin-right: 10px;
+    }
+  }
+
+  .juvo-account-dropdown .profile-name {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .juvo-account-dropdown .profile-name {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .juvo-account-dropdown .profile-name {
+    font-size: 14px;
+    display: block;
+  }
+
+  .juvo-menu-trigger {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 21px;
+  }
+
+  .juvo-header .inner-width {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .juvo-menu {
+    order: 3;
+    margin-right: 0;
+
+    &.active {
+
+      .juvo-menu-group {
+        display: block;
+        animation: fadeIn .2s;
+      }
+
+      .juvo-menu-trigger {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .juvo-account-dropdown {
+    order: 2;
+  }
+
+  .juvo-menu-group {
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 64px;
+    width: 100%;
+
+    .juvo-secondary-menu,
+    .juvo-primary-menu {
+      margin: 0;
+      display: block;
+
+      a {
+        font-size: 14px;
+        text-align: left;
+        padding: $spacing-sm;
+        margin: 0;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+
+        span {
+          text-align: left;
+
+          &:first-child {
+            left: 10px;
+            right: 10px;
+            width: auto;
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .juvo-logo {
+    flex: 1;
+    margin-right: $spacing-md;
+
+    a {
+      display: block;
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+
+  .juvo-account-dropdown .profile-name {
+    display: none;
+  }
+}

@@ -1,0 +1,104 @@
+body.juvo-body-app {
+
+  .ant-pagination {
+    margin-top: 15px;
+
+    .ant-pagination-item-link,
+    .ant-pagination-item {
+      border-color: $table-border-color;
+      color: $text-color-primary;
+
+      a {
+        color: $text-color-primary;
+      }
+    }
+
+    .ant-pagination-item-active {
+      border-color: $btn-color-primary;
+
+      a {
+        color: $btn-color-primary;
+      }
+    }
+
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+
+      &:hover {
+        border-color: lighten($btn-color-primary, 20%);
+
+        a {
+          color: $btn-color-primary;
+        }
+      }
+    }
+
+    .ant-pagination-next:not(.ant-pagination-disabled),
+    .ant-pagination-prev:not(.ant-pagination-disabled) {
+
+      &:hover {
+
+        .ant-pagination-item-link {
+          border-color: lighten($btn-color-primary, 20%);
+          color: $btn-color-primary;
+        }
+      }
+    }
+
+    .ant-pagination-disabled {
+
+      .ant-pagination-item-link {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+body.juvo-body-app .short-pagination .ant-input {
+  width: 40px;
+  height: 30px;
+  line-height: normal;
+  font-size: 16px;
+  padding: 0 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.short-pagination {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.select-table-rows {
+
+  .ant-select-selection {
+    border: none;
+  }
+
+  .ant-select-selection-selected-value {
+    font-size: 16px;
+  }
+
+  .ant-select-arrow {
+    color: #4c4c4c;
+    margin-top: -5px;
+  }
+
+  .ant-select-selection--single {
+    height: auto;
+  }
+}
+
+body.juvo-body-app .juvo-pagination-secondary {
+  margin: 0;
+  padding: 0;
+
+  .ant-pagination-item {
+    border: none;
+    min-width: auto;
+  }
+}

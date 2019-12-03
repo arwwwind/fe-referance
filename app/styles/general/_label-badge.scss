@@ -1,0 +1,21 @@
+.label-badge {
+  color: #fff;
+  background-color: $info-color;
+  padding: 1px 5px 1px 5px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &.primary {
+    background-color: $primary-color;
+  }
+}
+
+.circle-badge {
+  border-radius: 50px;
+  border: 1px solid $border-color;
+  display: inline-block;
+  padding: 6px 15px;
+}

@@ -1,0 +1,45 @@
+.service-name-filter {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $border-color;
+
+  .service-name {
+    flex: 1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ant-select {
+    min-width: 130px;
+    margin-left: 10px;
+
+    .ant-select-arrow {
+      color: #616161;
+      font-size: 16px;
+    }
+
+    .ant-select-selection {
+      height: auto;
+      min-height: auto;
+      border: none;
+    }
+
+    .ant-select-selection__rendered {
+      line-height: 1;
+    }
+
+    .ant-select-selection-selected-value {
+      text-align: center;
+      padding: 3px 10px 4px 10px;
+      line-height: 1;
+      border-radius: 100px;
+      background-color: $primary-color;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.service-item {
+  position: relative;
+  border-radius: 6px;
+  max-width: 253px;
+  padding: $spacing-sm;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+  .two-columns-auto-width.space-between {
+    justify-content: space-between;
+
+    .column {
+
+      .label-badge {
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.services-carousel {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid $border-color;
+
+  .ant-carousel .slick-slide {
+    padding: 3px 3px 6px 3px;
+  }
+}
+
+.service-tabs {
+
+  .ant-tabs-bar {
+    margin-bottom: 15px;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.tab-service-view-blocks {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 35px;
+
+  &:after {
+    top: 0;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 35px);
+    background-color: $border-color;
+    left: 50%;
+  }
+
+  > .ant-row {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+
+      > div {
+        padding-bottom: 0;
+      }
+    }
+
+    > div {
+      padding: 2px 15px 40px 15px;
+    }
+  }
+}
+
+.stats-group {
+  padding: 0 15px 30px 15px;
+}
+
+.stats-item {
+  float: left;
+  flex: 0 0 auto;
+  position: relative;
+  min-height: 1px;
+  display: block;
+  box-sizing: border-box;
+
+  .stats-value {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: $link-color;
+  }
+}
+
+.service-generate {
+  border-top: 1px solid $border-color;
+  padding: 30px 15px 15px;
+}
+
+@media (min-width: 768px) {
+
+  .stats-item {
+    width: 20%;
+  }
+}
+
+.service-reason-drawer .ant-drawer-title {
+  text-transform: capitalize;
+}

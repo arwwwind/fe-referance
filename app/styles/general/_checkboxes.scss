@@ -1,0 +1,73 @@
+.juvo-circle-checkbox {
+
+  .ant-checkbox-checked.ant-checkbox  + span {
+    color: $text-color-primary;
+  }
+
+  .ant-checkbox + span {
+    transition: color .1s ease-in-out;
+    color: $text-color-muted;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .ant-checkbox {
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/icons/circle-empty.png");
+    transition: background-image .1s ease-in-out;
+
+    &.ant-checkbox-checked {
+      background-image: url("../images/icons/circle-check.png");
+    }
+
+    &:after,
+    input,
+    span {
+      display: none;
+    }
+  }
+}
+
+.ant-checkbox-wrapper + span {
+  padding: 0;
+}
+
+.ant-checkbox-disabled + span {
+  color: $text-color-primary;
+  opacity: .8;
+}
+
+.ant-checkbox {
+  font-family: 'Lato', sans-serif;
+  color: $text-color-primary;
+
+  &.ant-checkbox-checked.ant-checkbox-disabled {
+    opacity: .8;
+
+    .ant-checkbox-inner {
+      border-color: lighten($border-color, 1%)!important;
+    }
+
+    .ant-checkbox-inner:after {
+      border-color: rgba(255,255,255, .7);
+    }
+  }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: $info-color;
+  border-color: lighten($info-color, 1%);
+}
+
+.ant-checkbox-checked:after {
+  border-color: $info-color;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: $info-color;
+}

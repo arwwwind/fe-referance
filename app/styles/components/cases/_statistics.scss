@@ -1,0 +1,67 @@
+.case-stats {
+  border-bottom: 1px solid $border-color;
+}
+
+.case-stats-table {
+  width: 255px;
+
+  tr {
+
+    td {
+      vertical-align: top;
+
+      &:first-child {
+        text-align: right;
+        padding-right: 10px;
+
+       &.text-left {
+         padding-left: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.stats-header {
+  display: flex;
+  align-items: center;
+
+  .title {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .group {
+    display: flex;
+    margin-right: 30px;
+
+    .value {
+      font-size: 20px;
+      font-weight: 700;
+
+      &.small {
+        font-size: 15px;
+      }
+    }
+
+    > div {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.stats-content {
+  display: flex;
+  justify-content: space-between;
+
+  .chart {
+    width: calc(100% - 260px);
+  }
+}

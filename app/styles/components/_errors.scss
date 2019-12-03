@@ -1,0 +1,21 @@
+.juvo-errors {
+  margin: 0;
+  padding: 14px 15px;
+  list-style: none;
+
+  li {
+    color: $text-color-danger;
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+body.juvo-body-app {
+
+  .has-error .ant-form-explain,
+  .has-error .ant-form-split {
+    color: $text-color-danger;
+  }
+}

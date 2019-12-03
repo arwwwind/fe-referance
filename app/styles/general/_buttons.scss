@@ -1,0 +1,119 @@
+body.juvo-body-app {
+
+  button {
+    outline: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+    }
+  }
+
+  .ant-btn {
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .ant-btn-primary {
+    color: #fff;
+    background-color: $btn-color-primary;
+    border-color: $btn-color-primary;
+
+    &.ant-btn-background-ghost {
+      color: $btn-color-primary;
+    }
+
+    &:hover {
+      background-color: lighten($btn-color-primary, 15%);
+      border-color: lighten($btn-color-primary, 15%);
+    }
+
+    &:disabled {
+      border-color: lighten($btn-color-primary, 10%);
+      background-color: lighten($btn-color-primary, 10%);
+
+      &:hover {
+        background-color: lighten($btn-color-primary, 10%);
+        color: #fff;
+      }
+    }
+  }
+
+  .ant-btn-lg {
+    font-weight: 700;
+    padding: 0 27px 0 28px;
+    display: flex;
+    align-items: center;
+    height: 1px;
+    min-height: 42px;
+    font-size: 15px;
+    width: auto;
+
+    .anticon {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 22px;
+      font-size: 11px;
+    }
+
+    &.ant-btn-circle.ant-btn-icon-only {
+      border-radius: 34px;
+      padding: 0;
+      min-width: 34px;
+      height: 34px;
+      min-height: 34px;
+
+      .anticon {
+        font-size: 13px;
+        left: 51%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+
+  .btn-center {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-text-center {
+
+    span {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .ant-btn-loading {
+    position: relative;
+
+    .anticon + span,
+    span + .anticon {
+      margin: 0;
+    }
+
+    .anticon-loading {
+      font-size: 15px;
+      position: absolute;
+      right: 14px;
+      left: auto;
+    }
+  }
+}
+
+.buttons-group-equal {
+  display: flex;
+  align-items: center;
+
+  button {
+    margin-right: $spacing-md;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

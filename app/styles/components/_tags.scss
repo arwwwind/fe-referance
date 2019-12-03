@@ -1,0 +1,40 @@
+.juvo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .juvo-tag {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.juvo-tag {
+  line-height: 1;
+  padding: 3px 10px 4px 10px;
+  border-radius: 100px;
+  background-color: $primary-color;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+
+  &.no-radius {
+    border-radius: 0;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+  }
+
+  &.success {
+    background-color: $success-color;
+  }
+
+  &.info {
+    background-color: $info-color;
+  }
+}

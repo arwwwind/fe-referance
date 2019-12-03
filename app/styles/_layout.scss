@@ -1,0 +1,74 @@
+.app-wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.logged-container {
+  padding-top: 63px;
+  flex-direction: column;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* HACK - IE container height 100% */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .logged-container {
+    min-height: 100vh;
+  }
+}
+
+.juvo-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: #fff;
+  z-index: 100;
+
+  .inner-width {
+    padding: 0 $spacing-md;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.juvo-main {
+  display: flex;
+  min-height: 100%;
+}
+
+.juvo-main-sidebar {
+  width: 312px;
+  padding: $spacing-md;
+
+  &.right {
+    border-left: 1px solid $border-color;
+  }
+
+  &.left {
+    border-right: 1px solid $border-color;
+  }
+}
+
+.juvo-main-container {
+  padding: $spacing-md;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1;
+  max-width: 100%;
+
+  &.with-sidebar {
+    max-width: 816px;
+  }
+}
+
+.juvo-main-content {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+.cases-table-header {
+  margin-top: $spacing-extra-xxl;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: $spacing-extra-xs;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: $spacing-xl;
+
+  .title {
+    margin-right: 10px;
+    flex: 1;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .juvo-table-search {
+    width: 150px;
+    margin-right: 10px;
+  }
+}
